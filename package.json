@@ -10,7 +10,7 @@
     "url": "https://github.com/Rolex436/code-pet"
   },
   "engines": {
-    "vscode": "^1.90.0"
+    "vscode": "^1.105.0"
   },
   "categories": ["Other"],
   "activationEvents": ["onStartupFinished"],
