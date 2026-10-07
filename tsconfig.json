@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es2025",
+        "target": "es2022",
         "module": "commonjs",
         "lib"  : ["ES2022"],
         "outDir": "out",
@@ -8,7 +8,7 @@
         "strict": true,
         "sourceMap": true,
         "noUnusedLocals": true,
-        "notUnusedParameters" : true
+        "noUnusedParameters" : true
     },
     "exclude": ["node_modules", ".vscode-test"]
 }
