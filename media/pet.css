@@ -1,0 +1,54 @@
+/* mood-excited */
+body.mood-excited #pet-body-group {
+    animation: excited-bounce 0.5s ease-in-out;
+}
+
+body.mood-excited #pet-tail {
+    animation: wag 0.35s ease-in-out infinite;
+}
+
+@keyframes excited-bounce {
+    0%, 100% {transform: translate(0) scale(1);}
+    50% { transform: translateY(-12px) scale(1.04);}
+}
+
+@keyframes wag {
+    0%, 100% {transform: rotate(-8deg);}
+    50% {transform: rotate(8deg);}
+}
+
+/* mood-idle */
+body.mood-idle #pet-body-group{
+    animation: sway3s ease-in-out infinite;
+}
+
+body.mood-idle #pet-pupil-left,
+body.mood-idle #pet-pupil-right {
+    animation: look-around 6s ease-in-out infinite iteration;
+}
+
+@keyframes sawy {
+    0%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(1.5deg);}
+}
+
+@keyframes look-around {
+    0%, 15%, 90%, 100% { transform: translateX(0);}
+    30%, 45% { transform: translateX(3px);}
+}
+
+/* mood-sleepy */
+body.mood-sleep #pet-body-group {
+    animation: breath 3.5 ease-in-out infinite;
+}
+
+body.mood-sleepy #pet-eye-left,
+body.mood-sleepy #pet-eye-right{ 
+    transform: scaleY(0.2);
+    transform-origin: center;
+}
+
+@keyframes breathe {
+    0%, 100% { tranform: translateY(0) scaleY(1);}
+    50% { transform: translateY(2px) scaleY(0.97);}
+}
