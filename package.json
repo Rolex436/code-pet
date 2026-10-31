@@ -12,8 +12,12 @@
   "engines": {
     "vscode": "^1.105.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onStartupFinished"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -71,7 +75,7 @@
     "package": "vsce package"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.19.43",
     "@types/vscode": "~1.105.0",
     "@vscode/vsce": "^3.0.0",
     "typescript": "^5.5.0"
