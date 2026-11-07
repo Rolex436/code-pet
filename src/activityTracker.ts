@@ -90,3 +90,9 @@ function addActivity(points: number) {
     lastActiveTime = Date.now();
     activityNeedsSaving = true;
 }
+
+export function resetActivity() {
+  score = 0;
+  lastActiveTime = Date.now();
+  return saveActivity();
+}
